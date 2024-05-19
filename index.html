@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デスクトップ環境整頓チェック</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #camera-container {
+            position: relative;
+        }
+        #webcam {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="camera-container">
+        <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    </div>
+    <div id="status">認識中...</div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
+    <script src="script.js"></script>
+</body>
+</html>
